@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#contact: norberto.chavez.nc@gmail.com
 import filecmp
 import wget
 import os
@@ -49,6 +50,8 @@ def PhishTankDBUpdate():
 		wget.download(url, '%sPhishTankDatabase.%s' % (dblocation, DB_type))
 		print ("Downloaded database.")
 
+#This script will continue running.  Change the sleep (in seconds) to download and update the database file in whatever
+#interval works for you.
 while True:
 	PhishTankDBUpdate()
 	time.sleep(3600)
