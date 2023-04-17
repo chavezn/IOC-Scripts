@@ -1,5 +1,4 @@
 #!/usr/bin/python
-#contact: norberto.chavez.nc@gmail.com
 import filecmp
 import wget
 import os
